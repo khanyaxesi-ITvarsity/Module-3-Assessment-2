@@ -1,0 +1,241 @@
+html{
+    height: 100%;
+}
+body{
+    font-family: sans-serif;
+    
+    margin: 0;
+    padding: 0;
+    
+    height: 100%;
+}
+
+.body-home{
+    background-image: url('images/back-1-port.jpg');
+    background-position: center; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.body-meals{
+    background-image: url('images/background.jpg');
+    background-position: center; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.body-home p{
+    text-align: center;
+    color: red;
+    font-family: fantasy;
+    font-size: 25px;
+}
+.home-menu-item p {
+    text-align: center;
+    color: yellow;
+    text-decoration: none;
+    font-family: fantasy;
+    font-size: 25px;
+}
+.home-menu i{
+    text-align: center;
+    color: yellow;
+    font-size: 25px;
+    float: right
+}
+.body-menu{
+    background-image: url('images/back-2.jpg');
+    background-position: center; 
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/*========== HEADER ==========*/
+.header {
+    background-color: red;
+    
+    width: 100%;
+    height: 100px;
+    top: 0;
+    
+    position: fixed;
+    overflow: hidden;
+    
+    text-align: center;
+}
+
+.header i {
+    float: left;
+    padding: 17px 0px 0px 17px;
+    color: yellow;
+}
+
+.header img {
+    width: 100px;
+    
+    padding: 2px;
+}
+
+/*========== HOME PAGE ==========*/
+#home-logo-img{
+    width: 300px;
+    height: 300px;
+    display: block;
+    margin: auto;
+    padding: 25px 10px 10px 10px
+}
+/*===== MENU =====*/
+.home-menu-item { 
+    text-decoration: none;
+    text-transform: uppercase;
+    
+    color: yellow;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    border: 5px solid red;
+        
+    display: block;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 80%
+}
+
+/*========== MEALS PAGE ==========*/
+#meals {
+    padding-top: 100px;
+}
+/*===== MEALS =====*/
+.meals-list a {
+    text-decoration: none;
+}
+.meals-list-item {
+    border: 5px solid red;
+    margin: 10px;
+}
+.meals-list-item h1 {
+    font-weight: bold;
+    font-size: 20px;
+    color: red;
+    padding-left: 10px;
+}
+.meals-list-item i {
+    float: right;
+    color: yellow;
+    padding: inherit;
+}
+.meals-list-item p {
+    font-size: 15px;
+    font-style: italic;
+    color: #4d4d4d;
+    margin-top: -7px;
+    padding-left: 10px;
+}
+/*========== MEALS PAGE ==========*/
+
+
+/*===== MEALS =====*/
+.menu-details img {
+    width: 100%;
+}
+.menu-details h1 {
+    font-size: 25px;
+    text-align: center;
+    border: 5px solid red;
+    margin: 10px;
+    padding: 5px;
+    color: red;
+}
+.menu-details h2 {
+    font-size: 20px;
+    text-align: left;
+    margin: 0;
+    margin-left: 10px;
+}
+.menu-details-info {
+    margin-left: 25px;
+    margin-right: 25px;
+}
+.menu-details-info p {
+    font-size: 25px;
+    display: inline-block;
+    color: red;
+}
+
+.menu-details-prices p {
+    font-size: 15px;
+    display: inline-block;
+    text-align: inherit;
+    color: red;
+}
+.menu-details-prices label {
+    line-height: 25px;
+    margin-left: 10px;
+    color: red;
+}
+.menu-details-prices h2 {
+    font-weight: bold;
+    font-size: 25px;
+    color: red;
+    padding-left: 10px;
+}
+/*============   BOTTOM-TABS   ============*/
+#tabs-bottom{
+      position : fixed;
+      bottom   : 0;
+      left     : 0;
+      z-index  : 500;
+      width    : 100%;
+      height   : 40px;
+      background-color: red;
+}
+
+#tabs-bottom a{
+     float : left;
+     display : block;
+     width : 100%;
+     height : 35px;
+     font-weight : 700;
+     color       : yellow;
+     text-align  : center;
+     text-decoration : none;
+     padding-top     : 12px;
+}
+textarea{
+      width: 100%;
+      height :25px;
+      margin : 12px 0;
+      border : 1px solid #929292;
+    padding-bottom: 65px;
+    margin-bottom: 65px;
+}
+/*========== RESPONSIVE LAYOUT ==========*/
+@media only screen and (min-width: 600px) {
+    #meals{
+        width: 80%;
+        margin: auto;
+    }
+}
+@media only screen and (min-width: 1000px) {
+        #meals{
+        width: 60%;
+        margin: auto;
+    }
+}
+@media only screen and (min-width: 1500px) {
+        #meals{
+        width: 40%;
+        margin: auto;
+    }
+}
+@media only screen and (min-width: 720px) {
+    .body-home {
+        background-image: url('images/back-1.jpg');
+}
+    .body-meals {
+        background-image: url('images/background.jpg');
+}
+    .body-menu{
+    background-image: url('images/back-2-land.jpg');
+}    
+}
